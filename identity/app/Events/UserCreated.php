@@ -25,14 +25,14 @@ class UserCreated implements ShouldBroadcast
      *
      * @var string
      */
-    public $connection = 'rabbitmq';
+    public $connection = 'redis';
 
     /**
      * The name of the queue on which to place the broadcasting job.
      *
      * @var string
      */
-    public $queue = 'job';
+    public $queue = 'default';
 
     /**
      * Create a new event instance.
