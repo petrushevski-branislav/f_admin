@@ -28,10 +28,12 @@ class UserCreatedEventHandler
      */
     public function handle(UserCreated $event)
     {
+        $user = $event -> user;
+
         return User::create([
-            'name' => $event['name'],
-            'email' => $event['email'],
-            'password' => $event
+            'name' => $user['name'],
+            'email' => $user['email'],
+            'password' => $user
         ]);
     }
 }

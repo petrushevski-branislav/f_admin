@@ -1,15 +1,16 @@
 # For more information: https://laravel.com/docs/sail
 version: '3'
 services:
-    identity.api:
+    laravel.test:
         build:
             context: ./vendor/laravel/sail/runtimes/8.0
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
         image: sail-8.0/app
+        container_name: identity.api
         ports:
-            - '${APP_PORT:-80}:80'
+            - '8080:80'
         environment:
             WWWUSER: '${WWWUSER}'
             LARAVEL_SAIL: 1
@@ -31,8 +32,9 @@ services:
     #         - sail
     mysql:
         image: 'mysql:8.0'
+        container_name: identity.db
         ports:
-            - '${FORWARD_DB_PORT:-3306}:3306'
+            - '3306:3306'
         environment:
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
             MYSQL_DATABASE: '${DB_DATABASE}'
