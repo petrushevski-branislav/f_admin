@@ -3,27 +3,17 @@ version: '3'
 services:
     laravel.test:
         build:
-            context: ./vendor/laravel/sail/runtimes/8.0
+            context: .
             dockerfile: Dockerfile
-            args:
-                WWWGROUP: '${WWWGROUP}'
-        image: sail-8.0/app
-        container_name: files.api
-        ports:
-            - '8081:80'
-        environment:
-            WWWUSER: '${WWWUSER}'
-            LARAVEL_SAIL: 1
+        command: 'php artisan serve --host=0.0.0.0'
         volumes:
-            - '.:/var/www/html'
-        networks:
-            - sail
-            - identity_app-shared
+            - .:/app
+        ports:
+            - 8000:8000
         depends_on:
             - mysql
     mysql:
         image: 'mysql:8.0.23'
-        container_name: files.db
         ports:
             - '33061:3306'
         environment:
@@ -32,17 +22,7 @@ services:
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-        volumes:
-            - 'sailmysql:/var/lib/mysql'
-        networks:
-            - sail
+        #volumes:
+            #- './storage/dbdata:/var/lib/mysql'
         healthcheck:
           test: ["CMD", "mysqladmin", "ping"]
-networks:
-    sail:
-        driver: bridge
-    identity_app-shared:
-        external: true
-volumes:
-    sailmysql:
-        driver: local
