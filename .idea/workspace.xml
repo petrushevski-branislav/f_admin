@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71dd23d8-a1ad-4bc7-87f6-19aca67533aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="71dd23d8-a1ad-4bc7-87f6-19aca67533aa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,6 +122,7 @@
       <path value="$PROJECT_DIR$/files/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/files/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/files/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/files/vendor/ably/ably-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1niGdhCW708qf8UIaLlr1imxUVj" />

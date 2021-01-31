@@ -68,6 +68,7 @@ services:
             - 'sailredis:/data'
         networks:
             - sail
+            - app-shared
         healthcheck:
           test: ["CMD", "redis-cli", "ping"]
     # memcached:
@@ -92,6 +93,8 @@ services:
 #        - sail
 networks:
     sail:
+        driver: bridge
+    app-shared:
         driver: bridge
 volumes:
     sailmysql:
