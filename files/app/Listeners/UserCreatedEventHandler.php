@@ -33,7 +33,7 @@ class UserCreatedEventHandler
         return User::create([
             'name' => $user['name'],
             'email' => $user['email'],
-            'password' => $user
+            'password' => $user['password']
         ]);
     }
 }
