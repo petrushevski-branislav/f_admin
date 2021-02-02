@@ -12,6 +12,9 @@ services:
             - 8000:8000
         depends_on:
             - mysql
+        networks:
+            - identity_app-shared
+            - sail
     mysql:
         image: 'mysql:8.0.23'
         ports:
@@ -22,7 +25,17 @@ services:
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-        #volumes:
-            #- './storage/dbdata:/var/lib/mysql'
+        volumes:
+          - 'sailmysql:/var/lib/mysql'
         healthcheck:
           test: ["CMD", "mysqladmin", "ping"]
+        networks:
+            - sail
+networks:
+    sail:
+        driver: bridge
+    identity_app-shared:
+        external: true
+volumes:
+    sailmysql:
+        driver: local

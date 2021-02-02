@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71dd23d8-a1ad-4bc7-87f6-19aca67533aa" name="Default Changelist" comment="" />
+    <list default="true" id="71dd23d8-a1ad-4bc7-87f6-19aca67533aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/identity/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,6 +126,19 @@
       <path value="$PROJECT_DIR$/files/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/files/vendor/phpunit/php-invoker" />
       <path value="$PROJECT_DIR$/files/vendor/ably/ably-php" />
+      <path value="$PROJECT_DIR$/files/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/files/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/files/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/files/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/files/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/files/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/files/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/files/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/files/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/files/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/files/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/files/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/files/vendor/vladimir-yuldashev/laravel-queue-rabbitmq" />
     </include_path>
   </component>
   <component name="ProjectId" id="1niGdhCW708qf8UIaLlr1imxUVj" />
