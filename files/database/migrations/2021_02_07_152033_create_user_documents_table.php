@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateUserDocumentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,8 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function ($collection) {
-            $collection->index('name');
-            $collection->unique('email');
+        Schema::create('user_documents', function ($collection) {
+            $collection->index('_id');
         });
     }
 
@@ -25,6 +24,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('user_documents');
     }
 }
