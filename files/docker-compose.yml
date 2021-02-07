@@ -16,22 +16,22 @@ services:
         networks:
             - identity_app-shared
             - sail
-    mysql:
-        image: 'mysql:8.0.23'
-        ports:
-            - '33061:3306'
-        environment:
-            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_DATABASE: '${DB_DATABASE}'
-            MYSQL_USER: '${DB_USERNAME}'
-            MYSQL_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-        volumes:
-          - 'sailmysql:/var/lib/mysql'
-        healthcheck:
-          test: ["CMD", "mysqladmin", "ping"]
-        networks:
-            - sail
+#    mysql:
+#        image: 'mysql:8.0.23'
+#        ports:
+#            - '33061:3306'
+#        environment:
+#            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+#            MYSQL_DATABASE: '${DB_DATABASE}'
+#            MYSQL_USER: '${DB_USERNAME}'
+#            MYSQL_PASSWORD: '${DB_PASSWORD}'
+#            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+#        volumes:
+#          - 'sailmysql:/var/lib/mysql'
+#        healthcheck:
+#          test: ["CMD", "mysqladmin", "ping"]
+#        networks:
+#            - sail
     mongodb:
         image: mongo
         container_name: mongodb
@@ -51,7 +51,7 @@ networks:
     identity_app-shared:
         external: true
 volumes:
-    sailmysql:
-        driver: local
+#    sailmysql:
+#        driver: local
     sailmongodb:
       driver: local
