@@ -12,6 +12,7 @@ services:
             - 8000:8000
         depends_on:
             - mysql
+            - mongodb
         networks:
             - identity_app-shared
             - sail
@@ -31,6 +32,19 @@ services:
           test: ["CMD", "mysqladmin", "ping"]
         networks:
             - sail
+    mongodb:
+        image: mongo
+        container_name: mongodb
+        environment:
+          - PUID=1000
+          - PGID=1000
+        volumes:
+          - 'sailmongodb:/var/lib/mongodb'
+        ports:
+          - 27017:27017
+        restart: unless-stopped
+        networks:
+          - sail
 networks:
     sail:
         driver: bridge
@@ -39,3 +53,5 @@ networks:
 volumes:
     sailmysql:
         driver: local
+    sailmongodb:
+      driver: local

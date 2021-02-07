@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Models\MongoUser;
 use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -35,7 +36,7 @@ class UserCreated implements ShouldQueue
     {
         echo 'UserCreatedEvent has been handled' . PHP_EOL;
 
-        User::create([
+        MongoUser::create([
             'name' => $this->data['name'],
             'email' => $this->data['email'],
             'password' => $this->data['password']
