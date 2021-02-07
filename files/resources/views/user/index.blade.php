@@ -5,38 +5,28 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>name</th>
-                <th>email</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>File</th>
             </tr>
             </thead>
             <tbody>
-
             @foreach($users as $user)
                 <tr>
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
-                    <td><a href="{{action('UserDocumentController@store', $user->id)}}" class="btn btn-warning">Upload document</a></td>
                     <td>
-                        <form action="{{action('UserDocumentController@destroy', $user->id)}}" method="post">
+                        <form action="/users/documents" method="post" enctype="multipart/form-data">
                             @csrf
-                            <input name="_method" type="hidden" value="DELETE">
-                            <button class="btn btn-danger" type="submit">Delete document</button>
+                            <input type="file" name="textFile"/>
+                            <input type="hidden" name="userId" value="{{$user->id}}}"/>
+                            <button type="submit" class="btn btn-sm btn-primary">Upload file</button>
                         </form>
                     </td>
                 </tr>
             @endforeach
             </tbody>
         </table>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                @foreach($users as $user)
-                    <div class="card mt-4">
-                        <div class="card-header">{{ $user->name }}</div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
     </div>
     </div>
 @endsection
-

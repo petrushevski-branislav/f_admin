@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\UserController;
+use \App\Http\Controllers\UserDocumentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user',[UserController::class, 'index']);
+Route::get('/users',[UserController::class, 'index']);
+Route::post('/users/documents',[UserDocumentController::class, 'store']);
+Route::delete('/users/documents',[UserDocumentController::class, 'destroy']);
