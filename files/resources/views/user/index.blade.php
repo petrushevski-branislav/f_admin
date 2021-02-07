@@ -7,7 +7,6 @@
             <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>File</th>
             </tr>
             </thead>
             <tbody>

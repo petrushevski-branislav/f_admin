@@ -7,7 +7,7 @@ use App\Models\UserDocument;
 
 class UserController extends Controller
 {
-    public function index()
+    public function indeqx()
     {
         $users = MongoUser::all();
         return view('user.index', compact('users'));
@@ -18,7 +18,6 @@ class UserController extends Controller
         $user = MongoUser::where('_id', $id)->first();
         #$user->load('documents');
         $documents = UserDocument::where('userId', $id)->get();
-        #dd($documents);
         return view('user.show', compact('user', 'documents'));
     }
 }
