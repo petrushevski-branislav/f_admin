@@ -327,3 +327,93 @@
 2021-02-07 15:33:30,466 INFO spawned: 'laravel-worker' with pid 11
 2021-02-07 15:33:31,468 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-02-07 15:33:31,468 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:19:59,458 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:19:59,462 INFO supervisord started with pid 1
+2021-02-07 16:20:00,464 INFO spawned: 'laravel-app' with pid 10
+2021-02-07 16:20:00,468 INFO spawned: 'laravel-worker' with pid 11
+2021-02-07 16:20:01,469 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:20:01,470 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:20:43,461 WARN received SIGTERM indicating exit request
+2021-02-07 16:20:43,463 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:20:43,464 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:20:43,467 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:20:52,278 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:20:52,282 INFO supervisord started with pid 1
+2021-02-07 16:20:53,284 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 16:20:53,285 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 16:20:54,288 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:20:54,288 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:21:28,193 WARN received SIGTERM indicating exit request
+2021-02-07 16:21:28,200 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:21:28,207 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:21:28,210 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:21:32,271 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:21:32,274 INFO supervisord started with pid 1
+2021-02-07 16:21:33,276 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 16:21:33,278 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 16:21:34,279 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:21:34,280 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:22:40,659 WARN received SIGTERM indicating exit request
+2021-02-07 16:22:40,660 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:22:40,662 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:22:40,664 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:22:40,664 INFO reaped unknown pid 23
+2021-02-07 16:25:40,435 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:25:40,440 INFO supervisord started with pid 1
+2021-02-07 16:25:41,442 INFO spawned: 'laravel-app' with pid 10
+2021-02-07 16:25:41,443 INFO spawned: 'laravel-worker' with pid 11
+2021-02-07 16:25:42,445 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:25:42,445 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:31:21,605 WARN received SIGTERM indicating exit request
+2021-02-07 16:31:21,605 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:31:21,607 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:31:21,610 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:31:21,611 INFO reaped unknown pid 24
+2021-02-07 16:31:25,789 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:31:25,792 INFO supervisord started with pid 1
+2021-02-07 16:31:26,795 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 16:31:26,797 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 16:31:27,802 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:31:27,802 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:47:25,372 WARN received SIGTERM indicating exit request
+2021-02-07 16:47:25,373 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:47:25,376 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:47:25,379 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:47:30,650 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:47:30,653 INFO supervisord started with pid 1
+2021-02-07 16:47:31,655 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 16:47:31,656 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 16:47:32,659 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:47:32,660 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:48:53,037 WARN received SIGTERM indicating exit request
+2021-02-07 16:48:53,037 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:48:53,039 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:48:53,041 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:48:53,041 INFO reaped unknown pid 23
+2021-02-07 16:48:58,746 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:48:58,749 INFO supervisord started with pid 1
+2021-02-07 16:48:59,753 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 16:48:59,757 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 16:49:00,761 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:49:00,761 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:50:23,332 WARN received SIGTERM indicating exit request
+2021-02-07 16:50:23,332 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:50:23,334 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:50:23,336 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:50:23,336 INFO reaped unknown pid 23
+2021-02-07 16:50:25,922 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:50:25,925 INFO supervisord started with pid 1
+2021-02-07 16:50:26,927 INFO spawned: 'laravel-app' with pid 10
+2021-02-07 16:50:26,929 INFO spawned: 'laravel-worker' with pid 11
+2021-02-07 16:50:27,930 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:50:27,931 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:52:47,100 WARN received SIGTERM indicating exit request
+2021-02-07 16:52:47,101 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 16:52:47,103 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 16:52:47,105 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 16:52:49,623 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 16:52:49,626 INFO supervisord started with pid 1
+2021-02-07 16:52:50,628 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 16:52:50,630 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 16:52:51,633 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 16:52:51,633 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
