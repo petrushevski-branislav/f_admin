@@ -21,4 +21,4 @@ Route::get('/', function () {
 Route::get('/users',[UserController::class, 'index']);
 Route::get('/users/{id}',[UserController::class, 'show']);
 Route::post('/users/documents',[UserDocumentController::class, 'store']);
-Route::delete('/users/documents',[UserDocumentController::class, 'destroy']);
+Route::delete('/users/{userId}/documents/{documentId}',[UserDocumentController::class, 'destroy']);

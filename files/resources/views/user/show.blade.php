@@ -41,15 +41,13 @@
                         <div class="card-header">Document name: {{$document->name}}</div>
 
                         <div class="card-body">
-                            
+
                         </div>
 
                         <div class="card-footer">
-                            <form action="/users/documents" method="post">
+                            <form action="/users/{{$user->id}}/documents/{{$document->_id}}" method="post">
                                 @method('DELETE')
                                 @csrf
-                                <input type="hidden" name="userId" value="{{$user->id}}}"/>
-                                <input type="hidden" name="documentId" value="{{$document->id}}}"/>
                                 <button type="submit" class="btn btn-sm btn-primary">Delete file</button>
                             </form>
                         </div>

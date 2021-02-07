@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MongoUser;
 use App\Models\UserDocument;
 use Illuminate\Http\Request;
 
@@ -27,8 +26,12 @@ class UserDocumentController extends Controller
         return redirect('/users/'.$request['userId']);
     }
 
-    public function destroy(Request $request)
+    public function destroy($userId, $documentId)
     {
+        $userDocument = UserDocument::where('_id', $documentId)->first();
 
+        $userDocument -> delete();
+
+        return redirect('/users/'.$userId);
     }
 }
