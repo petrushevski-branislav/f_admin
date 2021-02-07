@@ -14,14 +14,9 @@
             @foreach($users as $user)
                 <tr>
                     <td>{{$user->name}}</td>
-                    <td>{{$user->email}}</td>
+                    <td>{{$user->email}}</td>>
                     <td>
-                        <form action="/users/documents" method="post" enctype="multipart/form-data">
-                            @csrf
-                            <input type="file" name="textFile"/>
-                            <input type="hidden" name="userId" value="{{$user->id}}}"/>
-                            <button type="submit" class="btn btn-sm btn-primary">Upload file</button>
-                        </form>
+                        <a href="users/{{$user->id}}">Details</a>
                     </td>
                 </tr>
             @endforeach

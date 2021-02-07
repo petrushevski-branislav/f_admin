@@ -11,7 +11,8 @@ class UserDocumentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'textFile' => 'mimes:txt' // Only allow .txt file types
+            'textFile' => 'mimes:txt', // Only allow .txt file types
+            'name' => 'required'
         ]);
 
         $uploadedFile = $request->file('textFile');
@@ -19,12 +20,11 @@ class UserDocumentController extends Controller
 
         UserDocument::create([
             'userId' => $request['userId'],
+            'name' => $request['name'],
             'data' => $json
         ]);
 
-        $users = MongoUser::all();
-
-        return view('user.index', compact('users'));
+        return redirect('/users/'.$request['userId']);
     }
 
     public function destroy(Request $request)

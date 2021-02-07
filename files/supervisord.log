@@ -483,3 +483,24 @@
 2021-02-07 18:28:57,011 INFO spawned: 'laravel-worker' with pid 10
 2021-02-07 18:28:58,013 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-02-07 18:28:58,013 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 19:53:51,705 WARN received SIGTERM indicating exit request
+2021-02-07 19:53:51,706 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 19:53:51,708 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 19:53:51,710 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 19:53:51,710 INFO reaped unknown pid 23
+2021-02-07 19:54:08,992 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 19:54:08,995 INFO supervisord started with pid 1
+2021-02-07 19:54:09,997 INFO spawned: 'laravel-app' with pid 10
+2021-02-07 19:54:09,999 INFO spawned: 'laravel-worker' with pid 11
+2021-02-07 19:54:11,003 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 19:54:11,005 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 20:31:47,654 WARN received SIGTERM indicating exit request
+2021-02-07 20:31:47,654 INFO waiting for laravel-app, laravel-worker to die
+2021-02-07 20:31:47,656 INFO stopped: laravel-worker (terminated by SIGTERM)
+2021-02-07 20:31:47,658 INFO stopped: laravel-app (terminated by SIGTERM)
+2021-02-07 20:31:54,072 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-02-07 20:31:54,075 INFO supervisord started with pid 1
+2021-02-07 20:31:55,077 INFO spawned: 'laravel-app' with pid 9
+2021-02-07 20:31:55,079 INFO spawned: 'laravel-worker' with pid 10
+2021-02-07 20:31:56,080 INFO success: laravel-app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-02-07 20:31:56,081 INFO success: laravel-worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

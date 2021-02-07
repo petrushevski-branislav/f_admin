@@ -13,7 +13,7 @@ class CreateUserDocumentsTable extends Migration
     public function up()
     {
         Schema::create('user_documents', function ($collection) {
-            $collection->index('_id');
+            $collection->index('userId');
         });
     }
 

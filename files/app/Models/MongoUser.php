@@ -16,4 +16,9 @@ class MongoUser extends Authenticatable
     protected $dates = ['deleted_at'];
 
     protected $guarded = [];
+
+    public function documents()
+    {
+        return $this->hasMany(UserDocument::class, 'userId');
+    }
 }
