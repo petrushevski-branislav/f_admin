@@ -5,7 +5,7 @@ WORKDIR /src
 ADD consumer.py get_ip.py requirements.txt /src/
 
 # create virtualenv
-RUN pip3 install -r requirements.txt \
+RUN pip3 install -r requirements.txt scikit-learn \
     && pip3 list
 
 # puts virtualenv utils at top of path

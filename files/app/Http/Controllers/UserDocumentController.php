@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\FileUploaded;
 use App\Models\UserDocument;
 use Illuminate\Http\Request;
 
@@ -17,11 +18,15 @@ class UserDocumentController extends Controller
         $uploadedFile = $request->file('textFile');
         $json = $uploadedFile->get();
 
-        UserDocument::create([
+        $data = [
             'userId' => $request['userId'],
             'name' => $request['name'],
             'data' => $json
-        ]);
+        ];
+
+        UserDocument::create($data);
+
+        FileUploaded::dispatch($data);
 
         return redirect('/users/'.$request['userId']);
     }
