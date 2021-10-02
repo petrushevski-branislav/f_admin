@@ -1,0 +1,78 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+    identity.api:
+        build:
+            context: identity/vendor/laravel/sail/runtimes/7.4
+            dockerfile: Dockerfile
+            args:
+                WWWGROUP: '1000'
+        container_name: identity.api
+        ports:
+            - '8080:80'
+        environment:
+            WWWUSER: '1000'
+            LARAVEL_SAIL: 1
+        volumes:
+            - './identity/.:/var/www/html'
+        networks:
+            - sail
+        depends_on:
+            - mysql
+            - rabbitmq
+    mysql:
+        image: 'mysql:8.0.26'
+        container_name: identity.db
+        ports:
+            - '3306:3306'
+        environment:
+            MYSQL_DATABASE: 'identity'
+            MYSQL_PASSWORD: ''
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        volumes:
+            - 'sailmysql:/var/lib/mysql'
+        networks:
+            - sail
+        healthcheck:
+          test: ["CMD", "mysqladmin", "ping"]
+    rabbitmq:
+        image: rabbitmq:3.9.7-management
+        ports:
+            - 15672:15672
+            - 5672:5672
+        networks:
+            - sail
+    files.api:
+        build:
+            context: ./files/
+            dockerfile: Dockerfile
+        volumes:
+            - './files/.:/var/www/html'
+        ports:
+            - 8000:8000
+        depends_on:
+            - mongodb
+            - rabbitmq
+        networks:
+            - sail
+    mongodb:
+        image: mongo
+        container_name: mongodb
+        environment:
+          - PUID=1000
+          - PGID=1000
+        volumes:
+          - 'sailmongodb:/var/lib/mongodb'
+        ports:
+          - 27017:27017
+        restart: unless-stopped
+        networks:
+          - sail
+networks:
+    sail:
+        driver: bridge
+volumes:
+    sailmysql:
+        driver: local
+    sailmongodb:
+        driver: local

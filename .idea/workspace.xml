@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71dd23d8-a1ad-4bc7-87f6-19aca67533aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/f_admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/identity/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/categorize.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categorize/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/commandlinetools/Laravel_1_28_21__9_27_PM.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/files.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/commandlinetools/Laravel_1_28_21__7_39_PM.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/dataSources/9d0ddd87-1abd-4d11-b7e0-95c6eb6af011.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/dataSources/9d0ddd87-1abd-4d11-b7e0-95c6eb6af011/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/dataSources/9d0ddd87-1abd-4d11-b7e0-95c6eb6af011/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/dataSources/9d0ddd87-1abd-4d11-b7e0-95c6eb6af011/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/identity.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity/docker-compose.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +172,21 @@
       <path value="$PROJECT_DIR$/files/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/files/vendor/php-amqplib/php-amqplib" />
       <path value="$PROJECT_DIR$/files/vendor/vladimir-yuldashev/laravel-queue-rabbitmq" />
+      <path value="$PROJECT_DIR$/files/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/files/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/files/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/files/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/files/vendor/jenssegers/mongodb" />
+      <path value="$PROJECT_DIR$/files/vendor/phpdocumentor/graphviz" />
+      <path value="$PROJECT_DIR$/files/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/files/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/files/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/files/vendor/beyondcode/laravel-er-diagram-generator" />
+      <path value="$PROJECT_DIR$/files/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/files/vendor/league/config" />
+      <path value="$PROJECT_DIR$/files/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/files/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/files/vendor/mongodb/mongodb" />
     </include_path>
   </component>
   <component name="ProjectId" id="1niGdhCW708qf8UIaLlr1imxUVj" />
@@ -150,7 +198,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/identity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -165,6 +213,7 @@
       <workItem from="1611865825213" duration="40000" />
       <workItem from="1612090118849" duration="64000" />
       <workItem from="1612090201122" duration="6000" />
+      <workItem from="1633164231625" duration="6348000" />
     </task>
     <servers />
   </component>
