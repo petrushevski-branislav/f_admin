@@ -15,7 +15,7 @@
                                     Choose file:
                                 </div>
                                 <div class="col-6">
-                                    <input type="file" name="textFile"/>
+                                    <input type="file" accept="*" name="textFile"/>
                                 </div>
                             </div>
                             <div class="row mt-2">
@@ -41,7 +41,7 @@
                         <div class="card-header">Document name: {{$document->name}}</div>
 
                         <div class="card-body">
-
+                            <a href="{{$document->data}}">Download file</a>
                         </div>
 
                         <div class="card-footer">

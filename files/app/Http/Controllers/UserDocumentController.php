@@ -5,28 +5,27 @@ namespace App\Http\Controllers;
 use App\Jobs\FileUploaded;
 use App\Models\UserDocument;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class UserDocumentController extends Controller
 {
     public function store(Request $request)
     {
         $request->validate([
-            'textFile' => 'mimes:txt', // Only allow .txt file types
             'name' => 'required'
         ]);
 
-        $uploadedFile = $request->file('textFile');
-        $json = $uploadedFile->get();
+        $path = Storage::putFile('', $request->file('textFile'), $request['name']);
+
+        $url = Storage::url($path);
 
         $data = [
             'userId' => $request['userId'],
             'name' => $request['name'],
-            'data' => $json
+            'data' => $url
         ];
 
         UserDocument::create($data);
-
-        FileUploaded::dispatch($data);
 
         return redirect('/users/'.$request['userId']);
     }
@@ -34,6 +33,8 @@ class UserDocumentController extends Controller
     public function destroy($userId, $documentId)
     {
         $userDocument = UserDocument::where('_id', $documentId)->first();
+
+        Storage::delete($userDocument['data']);
 
         $userDocument -> delete();
 
