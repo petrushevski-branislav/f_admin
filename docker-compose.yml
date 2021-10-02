@@ -67,17 +67,6 @@ services:
         restart: unless-stopped
         networks:
           - sail
-    categorize:
-        build:
-            context: ./categorize/
-            dockerfile: Dockerfile
-        ports:
-            - 8081:80
-        networks:
-            - sail
-        #restart: on-failure
-        depends_on:
-            - rabbitmq
 networks:
     sail:
         driver: bridge
