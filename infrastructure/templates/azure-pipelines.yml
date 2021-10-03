@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+#trigger:
+#- master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+ subscriptionId: $(subscriptionId)
+ resourceGroupName: $(resourceGroupName)
+
+steps:
+- task: AzureCLI@2
+  displayName: "Deploy Infrastructure"
+  inputs:
+    azureSubscription: '$(subscriptionId)'
+    scriptType: bash
+    scriptLocation: inlineScript
+    inlineScript: |
+      az deployment group create --resource-group '$(resourceGroupName)' --name infrastructure \
+        --template-file storage_account.bicep
