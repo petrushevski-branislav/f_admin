@@ -19,4 +19,4 @@ steps:
     scriptLocation: inlineScript
     inlineScript: |
       az deployment group create --resource-group 'dev' --name infrastructure \
-        --template-file ./storage_account.bicep
+        --template-file ./infrastructure/storage_account.bicep
