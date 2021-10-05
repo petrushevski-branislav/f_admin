@@ -17,7 +17,7 @@ steps:
 - task: AzureCLI@2
   displayName: "Deploy Infrastructure"
   inputs:
-    azureSubscription: 'dev-connection'
+    azureSubscription: '$(subscriptionId)'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
     scriptType: bash
     scriptLocation: inlineScript
