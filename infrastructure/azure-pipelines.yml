@@ -6,6 +6,10 @@
 trigger:
 - none
 
+parameters:
+  - name: resourceGroup
+    default: 'dev'
+
 pool:
   vmImage: ubuntu-latest
 
@@ -18,5 +22,5 @@ steps:
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
-      az deployment group create --resource-group 'dev' --name infrastructure \
+      az deployment group create --resource-group ${{ parameters.resourceGroup }} --name infrastructure \
         --template-file ./infrastructure/storage_account.bicep
