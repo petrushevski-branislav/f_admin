@@ -10,9 +10,6 @@ parameters:
   - name: resourceGroup
     default: 'dev'
 
-variables:
-  subscription: $(subscriptionId)
-
 pool:
   vmImage: ubuntu-latest
 
@@ -20,7 +17,7 @@ steps:
 - task: AzureCLI@2
   displayName: "Deploy Infrastructure"
   inputs:
-    azureSubscription: $(subscription)
+    azureSubscription: $(subscriptionId)
     workingDirectory: '$(System.DefaultWorkingDirectory)'
     scriptType: bash
     scriptLocation: inlineScript
