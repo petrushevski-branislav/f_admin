@@ -9,17 +9,17 @@
 pool:
   vmImage: ubuntu-latest
 
-variables:
- azureSubscription: $(subscriptionId)
- resourceGroup: $(resourceGroupName)
+# variables:
+#  azureSubscription: $(subscriptionId)
+#  resourceGroup: $(resourceGroupName)
 
 steps:
 - task: AzureCLI@2
   displayName: "Deploy Infrastructure"
   inputs:
-    azureSubscription: '$(azureSubscription)'
+    azureSubscription: $(subscriptionId)
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
-      az deployment group create --resource-group '$(resourceGroup)' --name infrastructure \
+      az deployment group create --resource-group $(resourceGroupName) --name infrastructure \
         --template-file storage_account.bicep
