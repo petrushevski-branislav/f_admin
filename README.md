@@ -1,2 +1,6 @@
-# f_admin
-This project is about microservice architecture powered by Docker
+# File Admin
+
+2 microservices in Laravel.
+Rabbit MQ message broker.
+Docker & Docker Compose.
+Azure Blob Storage Integration.
